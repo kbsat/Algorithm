@@ -1,17 +1,9 @@
-# 백준 : 11022
-#  A+B-8
+# 백준 : 2438
+#  별찍기 - 1
 
-T = int(input())
-a_list = []
-b_list = []
-answer = []
-for i in range(T):
-    a, b = input().split()
-    a_list.append(int(a))
-    b_list.append(int(b))
+n = int(input())
 
-
-for i in range(T):
-    answer.append(a_list[i] + b_list[i])
-    print("Case #{0}: {1} + {2} = {3}".format(str(i+1),
-                                              a_list[i], b_list[i], answer[i]))
+for i in range(n):
+    for j in range(i+1):
+        print("*", end="")
+    print()
