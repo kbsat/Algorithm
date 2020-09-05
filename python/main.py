@@ -1,14 +1,15 @@
-# 백준 : 2439
-#  별찍기 - 2
+# 백준 : 10871
+# X보다 작은 수
 
-n = int(input())
-space_num = n
-for i in range(n):  # n번 반복해줌
+n, x = input().split()
+n = int(n)
+x = int(x)
+small_nums = []
+nums = input().split()
 
-    # n-1 ~ 0개의 공백을 찍어줌
-    for j in range(space_num-1, 0, -1):
-        print(" ", end="")
-    for k in range(i+1):  # 1~ n개의 별을 찍어줌
-        print("*", end="")
-    print()
-    space_num -= 1
+for num in nums:
+    if int(num) < x:
+        small_nums.append(num)
+
+for small_num in small_nums:
+    print(small_num, end=" ")
