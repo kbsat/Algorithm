@@ -1,13 +1,17 @@
-# 백준 : 11021
-#  A+B-7
+# 백준 : 11022
+#  A+B-8
 
 T = int(input())
+a_list = []
+b_list = []
 answer = []
 for i in range(T):
     a, b = input().split()
-    a = int(a)
-    b = int(b)
-    answer.append(a+b)
+    a_list.append(int(a))
+    b_list.append(int(b))
+
 
 for i in range(T):
-    print("Case #"+str(i+1)+": "+str(answer[i]))
+    answer.append(a_list[i] + b_list[i])
+    print("Case #{0}: {1} + {2} = {3}".format(str(i+1),
+                                              a_list[i], b_list[i], answer[i]))
