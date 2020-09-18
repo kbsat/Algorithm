@@ -1,11 +1,8 @@
 # 백준 : 10952
 # A+B-5
 
-a, b = input().split()
-a = int(a)
-b = int(b)
-while a != 0 and b != 0:
+while True:
+    a, b = map(int, input().split())
+    if a == 0 and b == 0:
+        break
     print(a+b)
-    a, b = input().split()
-    a = int(a)
-    b = int(b)
