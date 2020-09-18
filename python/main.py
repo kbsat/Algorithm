@@ -1,16 +1,14 @@
-# 백준 : 2577
-# 숫자의 개수
+# 백준 : 3052
+# 나머지
 
-a = int(input())
-b = int(input())
-c = int(input())
+num_list = []
+after_mod_list = []
+for i in range(10):
+    num_list.append(int(input()))
 
-result = a*b*c
-data = list(str(result))
-data = list(map(int, data))
-space_num = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-for i in data:
-    space_num[i] = space_num[i] + 1
+for num in num_list:
+    after_mod_list.append(num % 42)
 
-for j in space_num:
-    print(j)
+result_set = set(after_mod_list)
+
+print(len(result_set))
