@@ -1,7 +1,9 @@
 # 백준 : 2562
-# 최소, 최대
+# 최대값
 
-n = int(input())
-num_list = list(map(int, input().split()))
+a = []
+for i in range(9):
+    a.append(int(input()))
 
-print(min(num_list), max(num_list))
+print(max(a))
+print(a.index(max(a))+1)
