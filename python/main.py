@@ -1,9 +1,16 @@
-# 백준 : 2562
-# 최대값
+# 백준 : 2577
+# 숫자의 개수
 
-a = []
-for i in range(9):
-    a.append(int(input()))
+a = int(input())
+b = int(input())
+c = int(input())
 
-print(max(a))
-print(a.index(max(a))+1)
+result = a*b*c
+data = list(str(result))
+data = list(map(int, data))
+space_num = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+for i in data:
+    space_num[i] = space_num[i] + 1
+
+for j in space_num:
+    print(j)
