@@ -2,8 +2,8 @@
 # 더하기 사이클
 
 n = int(input())  # 26
-a_origin = int(n / 10)  # 2
-b_origin = int(n % 10)  # 6
+a_origin = n // 10  # 2
+b_origin = n % 10  # 6
 i = 0
 
 a = a_origin
