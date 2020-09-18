@@ -1,8 +1,9 @@
-# 백준 : 10952
-# A+B-5
+# 백준 : 10951
+# A+B-4
 
-while True:
-    a, b = map(int, input().split())
-    if a == 0 and b == 0:
-        break
-    print(a+b)
+try:
+    while True:
+        a, b = map(int, input().split())
+        print(a+b)
+except:
+    exit()
