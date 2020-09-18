@@ -1,19 +1,7 @@
-# 백준 : 1110
-# 더하기 사이클
+# 백준 : 10818
+# 최소, 최대
 
-n = int(input())  # 26
-a_origin = n // 10  # 2
-b_origin = n % 10  # 6
-i = 0
+n = int(input())
+num_list = list(map(int, input().split()))
 
-a = a_origin
-b = b_origin
-while True:
-    i += 1
-    c = (a + b) % 10
-    a = b
-    b = c
-    if a == a_origin and b == b_origin:
-        break
-
-print(i)
+print(min(num_list), max(num_list))
