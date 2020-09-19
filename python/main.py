@@ -1,23 +1,21 @@
-# 백준 : 8958
-# OX 퀴즈
+# 백준 : 4344
+# 평균은 넘겠지
 
-testNum = int(input())
-result_list = []
-sum = 0
-depth = 0
-for i in range(testNum):
-    answerCheck = list(input())
-    for j in range(len(answerCheck)):
-        if answerCheck[j] == 'O':
-            depth += 1
-            sum += depth
+C = int(input())
+answer_list = []
+for i in range(C):
+    score_list = list(map(int, input().split()))
+    student_number = score_list[0]
+    score_list.remove(student_number)
+    average = sum(score_list) / student_number
 
-        else:
-            depth = 0
+    higher_average_num = 0
+    for score in score_list:
+        if score > average:
+            higher_average_num += 1
 
-    result_list.append(sum)
-    sum = 0
-    depth = 0
+    higher_average_percent = (higher_average_num / student_number) * 100
+    answer_list.append(higher_average_percent)
 
-for result in result_list:
-    print(result)
+for answer in answer_list:
+    print(format(answer, ".3f")+"%")
