@@ -1,21 +1,23 @@
-# 백준 : 1546
-# 평균
+# 백준 : 8958
+# OX 퀴즈
 
-
-N = input()
-nums = list(map(int, input().split()))
-
-max_num = max(nums)
-
-
-def changeNum(num):
-    global max_num
-    return num/max_num * 100
-
-
-nums = list(map(changeNum, nums))
+testNum = int(input())
+result_list = []
 sum = 0
-for num in nums:
-    sum += num
+depth = 0
+for i in range(testNum):
+    answerCheck = list(input())
+    for j in range(len(answerCheck)):
+        if answerCheck[j] == 'O':
+            depth += 1
+            sum += depth
 
-print(sum/int(N))
+        else:
+            depth = 0
+
+    result_list.append(sum)
+    sum = 0
+    depth = 0
+
+for result in result_list:
+    print(result)
