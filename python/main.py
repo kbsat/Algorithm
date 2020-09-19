@@ -1,14 +1,21 @@
-# 백준 : 3052
-# 나머지
+# 백준 : 1546
+# 평균
 
-num_list = []
-after_mod_list = []
-for i in range(10):
-    num_list.append(int(input()))
 
-for num in num_list:
-    after_mod_list.append(num % 42)
+N = input()
+nums = list(map(int, input().split()))
 
-result_set = set(after_mod_list)
+max_num = max(nums)
 
-print(len(result_set))
+
+def changeNum(num):
+    global max_num
+    return num/max_num * 100
+
+
+nums = list(map(changeNum, nums))
+sum = 0
+for num in nums:
+    sum += num
+
+print(sum/int(N))
