@@ -1,8 +1,19 @@
-# 백준 :15596
-# 정수 N개의 합
+# 백준 : 4673
+# 셀프 넘버
 
-def solve(a):
-    sum = 0
-    for a_element in a:
-        sum += a_element
-    return sum
+def d(n):
+    sn = str(n)
+    result = n
+    for sn_element in sn:
+        result += int(sn_element)
+
+    return result
+
+
+origin = list(range(1, 10001))
+for i in range(1, 10001):
+    if d(i) in origin:
+        origin.remove(d(i))
+
+for i in origin:
+    print(i)
