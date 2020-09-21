@@ -1,19 +1,20 @@
-# 백준 : 4673
-# 셀프 넘버
+# 백준 : 1065
+# 한수
 
-def d(n):
-    sn = str(n)
-    result = n
-    for sn_element in sn:
-        result += int(sn_element)
+def isHan(x):
+    target = list(map(int, str(x)))
+    if x <= 99:
+        return True
+    elif target[0] - target[1] == target[1] - target[2]:
+        return True
 
-    return result
+    return False
 
 
-origin = list(range(1, 10001))
-for i in range(1, 10001):
-    if d(i) in origin:
-        origin.remove(d(i))
+num = int(input())
+result = 0
+for i in range(1, num+1):
+    if isHan(i):
+        result += 1
 
-for i in origin:
-    print(i)
+print(result)
