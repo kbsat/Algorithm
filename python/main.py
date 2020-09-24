@@ -1,5 +1,9 @@
-# 백준 : 1550
-# 16진수
+# 백준 : 2338
+# 긴자리 계산
 
-hexadecimal = "0x" + input()
-print(int(hexadecimal, 16))
+A = int(input())
+B = int(input())
+
+print(str(A+B))
+print(str(A-B))
+print(str(A*B))
