@@ -1,9 +1,17 @@
-# 백준 : 9654
-# 나부 함대 데이터
+# 백준 : 10170
+# NFC West vs North
 
-print("SHIP NAME      CLASS          DEPLOYMENT IN SERVICE")
-print("N2 Bomber      Heavy Fighter  Limited    21        ")
-print("J-Type 327     Light Combat   Unlimited  1         ")
-print("NX Cruiser     Medium Fighter Limited    18        ")
-print("N1 Starfighter Medium Fighter Unlimited  25        ")
-print("Royal Cruiser  Light Combat   Limited    4         ")
+print("\
+NFC West       W   L  T\n\
+-----------------------\n\
+Seattle        13  3  0\n\
+San Francisco  12  4  0\n\
+Arizona        10  6  0\n\
+St. Louis      7   9  0\n\
+\n\
+NFC North      W   L  T\n\
+-----------------------\n\
+Green Bay      8   7  1\n\
+Chicago        8   8  0\n\
+Detroit        7   9  0\n\
+Minnesota      5  10  1")
