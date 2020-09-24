@@ -1,8 +1,6 @@
-# 백준 : 3003
-# 킹,퀸,룩,비숍,나이트,폰
+# 백준 : 3046
+# R2
 
-origin_chess = [1, 1, 2, 2, 2, 8]
-donghyeok_chess = list(map(int, input().split()))
-
-for i in range(len(donghyeok_chess)):
-    print(origin_chess[i] - donghyeok_chess[i], end=" ")
+R1, S = map(int, input().split())
+R2 = (2 * S) - R1
+print(R2)
