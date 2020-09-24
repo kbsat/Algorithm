@@ -1,15 +1,9 @@
-# 백준 : 9653
-# 스타워즈 로고
+# 백준 : 9654
+# 나부 함대 데이터
 
-print("\
-    8888888888  888    88888\n\
-   88     88   88 88   88  88\n\
-    8888  88  88   88  88888\n\
-       88 88 888888888 88   88\n\
-88888888  88 88     88 88    888888\n\
-\n\
-88  88  88   888    88888    888888\n\
-88  88  88  88 88   88  88  88\n\
-88 8888 88 88   88  88888    8888\n\
- 888  888 888888888 88  88      88\n\
-  88  88  88     88 88   88888888")
+print("SHIP NAME      CLASS          DEPLOYMENT IN SERVICE")
+print("N2 Bomber      Heavy Fighter  Limited    21        ")
+print("J-Type 327     Light Combat   Unlimited  1         ")
+print("NX Cruiser     Medium Fighter Limited    18        ")
+print("N1 Starfighter Medium Fighter Unlimited  25        ")
+print("Royal Cruiser  Light Combat   Limited    4         ")
