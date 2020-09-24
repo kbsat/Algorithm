@@ -1,9 +1,8 @@
-# 백준 : 2914
-# 저작권
+# 백준 : 3003
+# 킹,퀸,룩,비숍,나이트,폰
 
-A, I = map(int, input().split())
-# melody_num / A = I
+origin_chess = [1, 1, 2, 2, 2, 8]
+donghyeok_chess = list(map(int, input().split()))
 
-melody_num = A * (I-1)
-
-print(str(melody_num+1))
+for i in range(len(donghyeok_chess)):
+    print(origin_chess[i] - donghyeok_chess[i], end=" ")
