@@ -1,9 +1,5 @@
-# 백준 : 1271
-# 엄청난 부자2
+# 백준 : 1550
+# 16진수
 
-n, m = map(int, input().split())
-
-distribution = n // m
-remainder = int(n % m)
-print(str(distribution))
-print(str(remainder))
+hexadecimal = "0x" + input()
+print(int(hexadecimal, 16))
