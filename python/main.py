@@ -1,10 +1,13 @@
-# 백준 : 5522
-# 카드 게임
+# 백준 : 5554
+# 심부름 가는 길
 
-a = []
-sum = 0
-for i in range(5):
-    a.append(int(input()))
-    sum += a[i]
+one = int(input())
+two = int(input())
+three = int(input())
+four = int(input())
 
-print(sum)
+sum = one+two+three+four
+minute = sum // 60
+second = sum % 60
+
+print(minute, second, sep="\n")
