@@ -1,9 +1,9 @@
-# 백준 : 2845
-# 파티가 끝나고 난 뒤
+# 백준 : 2914
+# 저작권
 
-L, P = map(int, input().split())
-guess_nums = list(map(int, input().split()))
+A, I = map(int, input().split())
+# melody_num / A = I
 
-people_num = L * P
-for guess_num in guess_nums:
-    print(str(guess_num - people_num), end=" ")
+melody_num = A * (I-1)
+
+print(str(melody_num+1))
