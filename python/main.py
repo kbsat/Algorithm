@@ -1,9 +1,11 @@
-# 백준 : 2338
-# 긴자리 계산
+# 백준 : 2475
+# 검증수
 
-A = int(input())
-B = int(input())
+# 5자리 숫자를 받아서 자리수별로 리스트형성
+id = list(map(int, input().split()))
 
-print(str(A+B))
-print(str(A-B))
-print(str(A*B))
+sum = 0
+for id_num in id:
+    sum += (id_num*id_num)
+verify_num = sum % 10
+print(verify_num)
