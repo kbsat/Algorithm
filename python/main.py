@@ -1,8 +1,6 @@
-# 백준 : 6749
-# Next in line
+# 백준 : 8370
+# Plane
 
-age1 = int(input())
-age2 = int(input())
-
-age3 = age2 + (age2 - age1)
-print(age3)
+n1, k1, n2, k2 = map(int, input().split())
+sum = n1*k1 + n2*k2
+print(sum)
