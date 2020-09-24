@@ -1,13 +1,8 @@
-# 백준 : 5554
-# 심부름 가는 길
+# 백준 : 6749
+# Next in line
 
-one = int(input())
-two = int(input())
-three = int(input())
-four = int(input())
+age1 = int(input())
+age2 = int(input())
 
-sum = one+two+three+four
-minute = sum // 60
-second = sum % 60
-
-print(minute, second, sep="\n")
+age3 = age2 + (age2 - age1)
+print(age3)
