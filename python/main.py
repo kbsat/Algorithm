@@ -1,4 +1,9 @@
-# 백준 : 11942
-# 고려대는 사랑입니다
+# 백준 : 14645
+# 와이버스 부릉부릉
 
-print("고려대학교")
+N, K = map(int, input().split())
+
+for i in range(N):
+    A, B = map(int, input().split())
+
+print("비와이")
