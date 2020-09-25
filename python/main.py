@@ -1,6 +1,5 @@
-# 백준 : 11283
-# 한글 2
+# 백준 : 11382
+# 꼬마 정민
 
-string = input()
-code_num = ord(string) - 44031
-print(code_num)
+A, B, C = map(int, input().split())
+print(A+B+C)
