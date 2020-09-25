@@ -1,5 +1,5 @@
-# 백준 : 11382
-# 꼬마 정민
+# 백준 : 11654
+# 아스키 코드
 
-A, B, C = map(int, input().split())
-print(A+B+C)
+code = input()
+print(ord(code))
