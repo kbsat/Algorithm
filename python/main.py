@@ -1,9 +1,9 @@
-# 백준 : 14645
-# 와이버스 부릉부릉
+# 백준 : 15727
+# 조별과제를 하려는데 조장이 사라졌다
 
-N, K = map(int, input().split())
+L = int(input())
+result = L // 5
+if L % 5 != 0:
+    result += 1
 
-for i in range(N):
-    A, B = map(int, input().split())
-
-print("비와이")
+print(result)
