@@ -1,5 +1,5 @@
-# 백준 : 10757
-# 큰 수 A+B
+# 백준 : 10926
+# ??!
 
-A, B = map(int, input().split())
-print(A+B)
+id = input()
+print(id+"??!")
