@@ -1,9 +1,8 @@
-# 백준 : 15727
-# 조별과제를 하려는데 조장이 사라졌다
+# 백준 : 1212
+# 8진수 2진수
 
-L = int(input())
-result = L // 5
-if L % 5 != 0:
-    result += 1
+oct = input()
+oct = "0o"+oct
 
-print(result)
+num = int(oct, 8)
+print(bin(num)[2:])
