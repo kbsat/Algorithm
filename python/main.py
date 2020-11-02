@@ -1,8 +1,6 @@
-# 백준 : 1712
-# 손익분기점
+# 백준 : 2420
+# 사파리월드
 
-a, b, c = map(int, input().split())
-if b >= c:
-    print(-1)
-else:
-    print(int(a/(c-b))+1)
+N, M = map(int, input().split())
+
+print(abs(N-M))
