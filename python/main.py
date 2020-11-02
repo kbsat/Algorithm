@@ -2,7 +2,7 @@
 # 크레인인형뽑기
 def solution(board, moves):
     result = []
-    pop = 0
+    answer = 0
     for move in moves:
         for i in board:
             if i[move-1] != 0:
@@ -12,9 +12,7 @@ def solution(board, moves):
         if len(result) >= 2 and result[-1] == result[-2]:
             result.pop()
             result.pop()
-            pop += 2
-    answer = 0
-    print(pop)
+            answer += 2
     return answer
 
 
