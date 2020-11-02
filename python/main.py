@@ -1,12 +1,8 @@
-# 백준 : 1297
-# TV 크기
-import math
+# 백준 : 1712
+# 손익분기점
 
-diagonal, heightRate, widthRate = map(int, input().split())
-
-totalRate = math.pow(heightRate, 2) + math.pow(widthRate, 2)
-x = math.sqrt(math.pow(diagonal, 2)/totalRate)
-height = x * heightRate
-width = x * widthRate
-
-print(int(height), int(width))
+a, b, c = map(int, input().split())
+if b >= c:
+    print(-1)
+else:
+    print(int(a/(c-b))+1)
