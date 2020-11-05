@@ -1,19 +1,11 @@
 # 프로그래머스
-# 체육복
+# K번째수
 
-def solution(n, lost, reserve):
-    new_lost = list(set(lost) - set(reserve))
-    new_reserve = list(set(reserve) - set(lost))
-    answer = n - len(new_lost)
+def solution(array, commands):
+    answer = []
+    for com in commands:
+        i, j, k = com
+        arr = sorted(array[i-1:j])
 
-    for lost_one in new_lost:
-        if new_reserve.count(lost_one-1) > 0:
-            new_reserve.remove(lost_one-1)
-            answer += 1
-        elif new_reserve.count(lost_one+1) > 0:
-            new_reserve.remove(lost_one+1)
-            answer += 1
+        answer.append(arr[k-1])
     return answer
-
-
-print(solution(5, [1, 2, 3], [1, 2, 3]))
