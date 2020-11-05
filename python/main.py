@@ -1,11 +1,17 @@
 # 프로그래머스
-# K번째수
+# 2016년
 
-def solution(array, commands):
-    answer = []
-    for com in commands:
-        i, j, k = com
-        arr = sorted(array[i-1:j])
+def solution(a, b):
+    answer = ''
+    week = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
+    dayNum = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    date = 0
+    for i in range(a-1):
+        date += dayNum[i]
+    date += b-1
+    answer = week[(date % 7)]
 
-        answer.append(arr[k-1])
     return answer
+
+
+print(solution(1, 1))
