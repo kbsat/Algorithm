@@ -1,13 +1,24 @@
-# programmers
-# 두 개 뽑아서 더하기
-def solution(numbers):
+# 프로그래머스
+# 모의고사
+
+def solution(answers):
     answer = []
-    for i in range(len(numbers)):
-        for j in range(i+1, len(numbers)):
-            answer.append(numbers[i]+numbers[j])
+    scores = [0, 0, 0]
+    first_supoja = [1, 2, 3, 4, 5]
+    second_supoja = [2, 1, 2, 3, 2, 4, 2, 5]
+    third_supoja = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+    for enum, ans in enumerate(answers):
+        if first_supoja[enum % len(first_supoja)] == ans:
+            scores[0] += 1
+        if second_supoja[enum % len(second_supoja)] == ans:
+            scores[1] += 1
+        if third_supoja[enum % len(third_supoja)] == ans:
+            scores[2] += 1
 
-    return sorted(list(set(answer)))
+    for i in range(len(scores)):
+        if max(scores) == scores[i]:
+            answer.append(int(i+1))
+    return answer
 
 
-numbers = [2, 1, 3, 4, 1]
-solution(numbers)
+solution([1, 3, 2, 4, 2])
