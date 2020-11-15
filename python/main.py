@@ -1,20 +1,12 @@
 # 프로그래머스
-# 같은 숫자는 싫어
+# 나누어 떨어지는 숫자 배열
 
-def solution(arr):
+def solution(arr, divisor):
     answer = []
-
-    seqCheckNum = -1
     for a in arr:
-        if seqCheckNum != a:
+        if int(a) % divisor == 0:
             answer.append(a)
-            seqCheckNum = a
+    if len(answer) == 0:
+        answer.append(-1)
 
-    print(answer)
-
-    return answer
-
-
-# arr = [1, 1, 3, 3, 0, 1, 1]
-# print(arr.count(1))
-print(solution([1, 1, 3, 3, 0, 1, 1]))
+    return sorted(answer)
