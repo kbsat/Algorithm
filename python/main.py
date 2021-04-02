@@ -1,20 +1,13 @@
 # 이코테
-# 3. 숫자 카드 게임
+# 4. 1이 될 때까지
 
-n,m = map(int,input().split())
-cards = [[0] * m for _ in range(n)]
-min_set = set([])
+N, K = map(int,input().split())
+count = 0
+while N>=2 :
+    if N % K == 0:
+        N = N // K
+    else :
+        N = N - 1
+    count += 1
 
-# 배열입력
-for i in range(n):
-    cards[i] = list(map(int,input().split()))
-
-print(cards)
-for i in range(n):
-    min_num = cards[i][0]
-    for j in range(m):
-        if min_num > cards[i][j]:
-            min_num = cards[i][j]
-    min_set.add(min_num)
-
-print(max(min_set))
+print(count)
