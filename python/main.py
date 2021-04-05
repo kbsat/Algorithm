@@ -13,7 +13,7 @@ for num in aList:
         dic[num] = 1
 
 if len(dic) == 1:
-    result = dic.keys[0] * 1000 + 10000
+    result = aList[0] * 1000 + 10000
 elif len(dic) == 2:
     for k, v in dic.items():
         if v == 2:
